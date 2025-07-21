@@ -1,0 +1,72 @@
+{
+  "grid": [
+    ["M"],
+    ["M", "I"],
+    ["I", "S", "M"],
+    ["M", "I", "S", "T"],
+    ["O", "M", "I", "T", "S"],
+    ["I", "M", "P", "O", "S", "T"],
+    ["I", "M", "P", "O", "R", "T", "S"]
+  ],
+  "solution": [
+    ["M"],
+    ["M", "I"],
+    ["I", "S", "M"],
+    ["M", "I", "S", "T"],
+    ["O", "M", "I", "T", "S"],
+    ["I", "M", "P", "O", "S", "T"],
+    ["I", "M", "P", "O", "R", "T", "S"]
+  ],
+  "clues": {
+    "across": {
+      "1": "Bond's boss",
+      "2": "Do, re, __ fa...",
+      "3": "Any doctrine",
+      "4": "Water vapour",
+      "5": "Excludes",
+      "6": "Customs duty",
+      "7": "Foreign goods"
+    }
+  },
+  "wordPositions": {
+    "across": {
+      "1": {"row": 0, "col": 0, "length": 1, "answer": "M"},
+      "2": {"row": 1, "col": 0, "length": 2, "answer": "MI"},
+      "3": {"row": 2, "col": 0, "length": 3, "answer": "ISM"},
+      "4": {"row": 3, "col": 0, "length": 4, "answer": "MIST"},
+      "5": {"row": 4, "col": 0, "length": 5, "answer": "OMITS"},
+      "6": {"row": 5, "col": 0, "length": 6, "answer": "IMPOST"},
+      "7": {"row": 6, "col": 0, "length": 7, "answer": "IMPORTS"}
+    },
+    "down": {
+      "1": {"row": 0, "col": 0, "length": 1, "answer": "M"},
+      "2": {"row": 1, "col": 0, "length": 1, "answer": "M"},
+      "3": {"row": 1, "col": 1, "length": 1, "answer": "I"},
+      "4": {"row": 2, "col": 0, "length": 1, "answer": "I"},
+      "5": {"row": 2, "col": 1, "length": 1, "answer": "S"},
+      "6": {"row": 2, "col": 2, "length": 1, "answer": "M"},
+      "7": {"row": 3, "col": 0, "length": 1, "answer": "M"},
+      "8": {"row": 3, "col": 1, "length": 1, "answer": "I"},
+      "9": {"row": 3, "col": 2, "length": 1, "answer": "S"},
+      "10": {"row": 3, "col": 3, "length": 1, "answer": "T"},
+      "11": {"row": 4, "col": 0, "length": 1, "answer": "O"},
+      "12": {"row": 4, "col": 1, "length": 1, "answer": "M"},
+      "13": {"row": 4, "col": 2, "length": 1, "answer": "I"},
+      "14": {"row": 4, "col": 3, "length": 1, "answer": "T"},
+      "15": {"row": 4, "col": 4, "length": 1, "answer": "S"},
+      "16": {"row": 5, "col": 0, "length": 1, "answer": "I"},
+      "17": {"row": 5, "col": 1, "length": 1, "answer": "M"},
+      "18": {"row": 5, "col": 2, "length": 1, "answer": "P"},
+      "19": {"row": 5, "col": 3, "length": 1, "answer": "O"},
+      "20": {"row": 5, "col": 4, "length": 1, "answer": "S"},
+      "21": {"row": 5, "col": 5, "length": 1, "answer": "T"},
+      "22": {"row": 6, "col": 0, "length": 1, "answer": "I"},
+      "23": {"row": 6, "col": 1, "length": 1, "answer": "M"},
+      "24": {"row": 6, "col": 2, "length": 1, "answer": "P"},
+      "25": {"row": 6, "col": 3, "length": 1, "answer": "O"},
+      "26": {"row": 6, "col": 4, "length": 1, "answer": "R"},
+      "27": {"row": 6, "col": 5, "length": 1, "answer": "T"},
+      "28": {"row": 6, "col": 6, "length": 1, "answer": "S"}
+    }
+  }
+}
