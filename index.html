@@ -390,7 +390,7 @@
 
 
 
-    </style>
+</style>
 </head>
 <body>
     <div class="title">Crossword</div>
@@ -682,29 +682,32 @@
         }
         
         function handleKeyPress(event) {
-            if (!currentCell) return;
-            
-            const key = event.key.toUpperCase();
-            
-            if (key >= 'A' && key <= 'Z') {
-                const cellKey = `${currentCell.row}-${currentCell.col}`;
-                if (!fixedCells.has(cellKey)) {
-                    userAnswers[cellKey] = key;
-                    updateCell(currentCell.row, currentCell.col, key);
-                    moveToNextCell();
-                }
-            } else if (event.key === 'Backspace') {
-                const cellKey = `${currentCell.row}-${currentCell.col}`;
-                if (!fixedCells.has(cellKey)) {
-                    userAnswers[cellKey] = '';
-                    updateCell(currentCell.row, currentCell.col, '');
-                    moveToPreviousCell();
-                }
-            } else if (event.key === 'ArrowRight' || event.key === 'ArrowLeft' || 
-                       event.key === 'ArrowUp' || event.key === 'ArrowDown') {
-                handleArrowKey(event.key);
-            }
+    if (!currentCell) return;
+
+    const key = event.key.toUpperCase();
+    const cellKey = `${currentCell.row}-${currentCell.col}`;
+
+    // Only allow A-Z (single character, alphabetic)
+    if (/^[A-Z]$/.test(key)) {
+        if (!fixedCells.has(cellKey)) {
+            userAnswers[cellKey] = key;
+            updateCell(currentCell.row, currentCell.col, key);
+            moveToNextCell();
         }
+    } else if (event.key === 'Backspace') {
+        if (!fixedCells.has(cellKey)) {
+            userAnswers[cellKey] = '';
+            updateCell(currentCell.row, currentCell.col, '');
+            moveToPreviousCell();
+        }
+    } else if (
+        event.key === 'ArrowRight' || event.key === 'ArrowLeft' ||
+        event.key === 'ArrowUp' || event.key === 'ArrowDown'
+    ) {
+        handleArrowKey(event.key);
+    }
+}
+
         
         function updateCell(row, col, value) {
             const cellElement = document.querySelector(`[data-row="${row}"][data-col="${col}"]`);
